@@ -20,7 +20,7 @@ export class AppComponent {
  
   }
 
-// Login fb button action
+// button action for Login fb 
   loginWithOptions() {
 
     const loginOptions: LoginOptions = {
