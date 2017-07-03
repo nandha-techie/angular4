@@ -5,7 +5,7 @@ import { FacebookModule } from 'ngx-facebook';
 import { AppComponent } from './app.component';
 import { Page1Component } from './page1/page1.component';
 import { Page2Component } from './page2/page2.component';
-import { RouterModule, Routes} from '@angular/router';
+import { appRouterModule } from "./app.route";
 
 @NgModule({
   declarations: [
@@ -16,9 +16,7 @@ import { RouterModule, Routes} from '@angular/router';
   imports: [
     BrowserModule,
     FacebookModule.forRoot(),
-    RouterModule.forRoot([
-    	{path: 'page1', component: Page1Component },{path: 'page2', component: Page2Component }
-    ])
+    appRouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
